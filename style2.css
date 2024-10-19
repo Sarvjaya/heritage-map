@@ -1,0 +1,208 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  header button {
+    padding: 10px 20px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    text-align: center;
+    background-image: url('https://img.freepik.com/premium-photo/abstract-map-art-landmasses-earth-tones_1123896-87412.jpg?w=1060'); /* Example image for background */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .hero button {
+    padding: 15px 30px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  /* Card Section Styles */
+  .cards {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .cards h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .card-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 26%;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Grows the card by 5% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increases the shadow */
+}
+
+  .card img {
+    width: 90%;
+    height: 140px; /* Slightly smaller height */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Reduced space between image and text */
+  }
+  
+  .card h3 {
+    font-size: 20px; /* Reduced font size */
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 14px; /* Slightly smaller font size */
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .card button {
+    margin-top: auto;
+    padding: 8px 15px; /* Smaller button */
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Reduced button text size */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1000px) {
+    .card-row {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  .footer {
+    background-color: #604b6d; /* Dark Blue/Teal footer */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #6D597A; /* Muted Purple border */
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #6D597A; /* Muted Purple border on input */
+    transition: border-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.footer input:focus {
+    border-color: #B56576; /* Muted Pink focus */
+}
+
+.footer button {
+    padding: 10px 20px;
+    background-color: #000000; /* Muted Pink button */
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer button:hover {
+    background-color: #E56B6F; /* Soft Red hover */
+    transform: scale(1.05);
+}
+
+.footer .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer .links div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .links a {
+    color: #03072f; /* Muted Orange link */
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+    
+}
+
+.footer .links a:hover {
+    color: #B56576; /* Muted Pink hover for footer links */
+}
+
+  

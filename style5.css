@@ -1,0 +1,238 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    color: #333;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  header button {
+    padding: 10px 20px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Login Section */
+.login-section {
+    width: 50%;
+    max-width: 500px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Social Login Links */
+.social-login {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.google {
+    background-color: #db4437;
+}
+
+.facebook {
+    background-color: #4267b2;
+}
+
+.apple {
+    background-color: #000000;
+}
+
+/* Login Form */
+.login-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.forgot-password {
+    color: #7e57c2;
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #7e57c2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#image-container {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 200px; /* Adjust as needed */
+    max-height: 300px; /* Adjust as needed */
+    object-fit: contain;
+}
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 16px;
+}
+
+/* Talent Count */
+.talent-count {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ffca28;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.talent-count span {
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #604b6d; /* Dark Blue/Teal footer */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #6D597A; /* Muted Purple border */
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #6D597A; /* Muted Purple border on input */
+    transition: border-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.footer input:focus {
+    border-color: #B56576; /* Muted Pink focus */
+}
+
+.footer button {
+    padding: 10px 20px;
+    background-color: #000000; /* Muted Pink button */
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer button:hover {
+    background-color: #E56B6F; /* Soft Red hover */
+    transform: scale(1.05);
+}
+
+.footer .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer .links div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .links a {
+    color: #03072f; /* Muted Orange link */
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+    
+}
+
+.footer .links a:hover {
+    color: #B56576; /* Muted Pink hover for footer links */
+}

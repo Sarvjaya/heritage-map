@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  }
+  
+  header {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+   background-color: #000000;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(206, 205, 205);
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 7px 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d5618a;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button.login {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border: 2px solid #6B47DC;
+  }
+  
+  button.signup {
+    background-color: #6B47DC;
+    color: white;
+  }
+  
+  .hero {
+    background-image: url("https://img.freepik.com/premium-photo/ellora-caves-historical-architecture-india_959624-85416.jpg?w=1060");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  .hero-content p{
+    font-family: "Inter", sans-serif;
+  }
+  
+  .features {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+.card {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+  .card p{
+    font-family: "Inter", sans-serif;
+    color:#38479b;
+  }
+  
+  .discover {
+    background-color: #F3F3F3;
+    padding: 50px 20px;
+    text-align: center;
+    margin:0 41px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+  }
+  .discover p{
+    color:#131a3c;
+  }
+  
+  .discover h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .socials a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .socials a:hover {
+    color: #6B47DC;
+  }
+  .footer {
+    background-color: #604b6d; /* Dark Blue/Teal footer */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #6D597A; /* Muted Purple border */
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #6D597A; /* Muted Purple border on input */
+    transition: border-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.footer input:focus {
+    border-color: #B56576; /* Muted Pink focus */
+}
+
+.footer button {
+    padding: 10px 20px;
+    background-color: #000000; /* Muted Pink button */
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer button:hover {
+    background-color: #E56B6F; /* Soft Red hover */
+    transform: scale(1.05);
+}
+
+.footer .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer .links div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .links a {
+    color: #03072f; /* Muted Orange link */
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+    
+}
+
+.footer .links a:hover {
+    color: #B56576; /* Muted Pink hover for footer links */
+}
+
+  
